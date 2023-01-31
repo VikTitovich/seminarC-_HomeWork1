@@ -34,13 +34,49 @@
 // 32679 -> 6
 // ****************************************************************************************************
 
-Console.WriteLine("Введите число: ");
+// Console.WriteLine("Введите число: ");
 
-int.TryParse(Console.ReadLine(), out int number);
+// int.TryParse(Console.ReadLine(), out int number);
 
-int i = 2;
+// int i = 2;
 
-number =  number.ToString()[i] - '0';
+// number =  number.ToString()[i] - '0';
 
-Console.WriteLine(number);
+// Console.WriteLine(number);
+
+
+//***************************************************************************
+
+// Console.WriteLine("Введите число: ");
+
+// bool isnumber = int.TryParse(Console.ReadLine(), out int number);
+
+// if (isnumber)
+// {
+// int digit = 0;
+
+// if (number >= 100)
+// {
+//     while (number > 999)
+//     {
+//         number = number / 10;
+//     } 
+//     digit = number % 10;
+//     Console.WriteLine(digit);
+// } 
+// else
+// {
+//     Console.WriteLine("Третьей цифры нет");
+// }
+// }
+// else
+// {
+//    Console.WriteLine("Вы ввели не число."); 
+// }
+//****************************************************************************
+
+
+
+
+
 
