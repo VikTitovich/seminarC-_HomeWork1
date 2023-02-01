@@ -32,7 +32,7 @@ while (isWork)
 		{
 			case 1:
 			{
-                  Console.WriteLine("Введите трёхзначное число: ");
+                Console.WriteLine("Введите трёхзначное число: ");
 
                   bool isnumber = int.TryParse(Console.ReadLine(), out int number);
 
@@ -48,7 +48,7 @@ while (isWork)
 			}
 			case 2:
 			{
-				          Console.WriteLine("Введите число: ");
+				        Console.WriteLine("Введите число: ");
 
                   bool isnumber = int.TryParse(Console.ReadLine(), out int number);
 
@@ -63,7 +63,7 @@ while (isWork)
                                 number = number / 10;
                             } 
                             digit = number % 10;
-                            Console.WriteLine(digit);
+                            Console.WriteLine($"Третья цифра равна {digit}");
                         } 
                     else
                         {
