@@ -10,20 +10,20 @@ while (isWork)
         {
             case 1:
                 {
-                    Console.WriteLine("Введите 1-ое число: ");
+                    Console.WriteLine("Enter first number: ");
 
                     int.TryParse(Console.ReadLine(), out int number);
 
-                    Console.WriteLine("Введите 2-ое число: ");
+                    Console.WriteLine("Enter second number: ");
 
                     int.TryParse(Console.ReadLine(), out int number1);
 
                     if (number > number1)
                     {
-                        Console.WriteLine("1 max и равно " + number);
+                        Console.WriteLine($"First max = {number}");
                     }
                     else
-                        Console.WriteLine("2 max и равно " + number1);
+                        Console.WriteLine("Second max = {number1}");
 
                     break;
                 }
