@@ -30,25 +30,35 @@ while (isWork)
     {
         switch (j)
         {
+
             case 1:
                 {
-                    Console.WriteLine("Введите трёхзначное число: ");
+                    Console.WriteLine("Enter three-digit number: ");
 
                     bool isnumber = int.TryParse(Console.ReadLine(), out int number);
 
                     if (isnumber)
                     {
-                        Console.WriteLine($"Вторая цифра числа {number} равна {(number / 10) % 10}");
+                        if ((number >= 100) && (number < 999))
+                        {
+                            Console.WriteLine($"The second digit of the number {number} is {(number / 10) % 10}");
+                        }
+                        else
+                        {
+                            Console.WriteLine("You didn't enter a three-digit number.");
+                        }
                     }
                     else
                     {
-                        Console.WriteLine("Вы ввели не число.");
+                        Console.WriteLine("You didn't enter a number.");
                     }
                     break;
                 }
+
+
             case 2:
                 {
-                    Console.WriteLine("Введите число: ");
+                    Console.WriteLine("Enter number: ");
 
                     bool isnumber = int.TryParse(Console.ReadLine(), out int number);
 
@@ -63,43 +73,43 @@ while (isWork)
                                 number = number / 10;
                             }
                             digit = number % 10;
-                            Console.WriteLine($"Третья цифра равна {digit}");
+                            Console.WriteLine($"Third digit is {digit}");
                         }
                         else
                         {
-                            Console.WriteLine("Третьей цифры нет");
+                            Console.WriteLine("There is no third digit");
                         }
                     }
                     else
                     {
-                        Console.WriteLine("Вы ввели не число.");
+                        Console.WriteLine("You didn't enter a number.");
                     }
                     break;
                 }
             case 3:
                 {
-                    Console.WriteLine("Введите день недели: ");
+                    Console.WriteLine("Enter the day of the week: ");
                     bool isnumber = int.TryParse(Console.ReadLine(), out int number);
 
                     if (isnumber)
                     {
                         if ((number == 6) || (number == 7))
                         {
-                            Console.WriteLine("Да");
+                            Console.WriteLine("Yes");
                         }
                         else if ((number >= 1) && (number <= 5))
                         {
-                            Console.WriteLine("Нет");
+                            Console.WriteLine("No");
                         }
 
                         else
                         {
-                            Console.WriteLine("Дней в неделе только 7. Вы ввели неправильное число");
+                            Console.WriteLine("There are only 7 days in a week. You entered the wrong number.");
                         }
                     }
                     else
                     {
-                        Console.WriteLine("Вы ввели не число.");
+                        Console.WriteLine("You didn't enter a number.");
                     }
                     break;
                 }
