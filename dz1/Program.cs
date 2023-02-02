@@ -10,11 +10,11 @@ while (isWork)
         {
             case 1:
                 {
-                    Console.WriteLine("Enter first number: ");
+                    Console.WriteLine("Enter a first number: ");
 
                     int.TryParse(Console.ReadLine(), out int number);
 
-                    Console.WriteLine("Enter second number: ");
+                    Console.WriteLine("Enter a second number: ");
 
                     int.TryParse(Console.ReadLine(), out int number1);
 
@@ -30,15 +30,15 @@ while (isWork)
             case 2:
                 {
 
-                    Console.WriteLine("Введите 1-ое число: ");
+                    Console.WriteLine("Enter a first number: ");
 
                     int.TryParse(Console.ReadLine(), out int number);
 
-                    Console.WriteLine("Введите 2-ое число: ");
+                    Console.WriteLine("Enter a second number: ");
 
                     int.TryParse(Console.ReadLine(), out int number1);
 
-                    Console.WriteLine("Введите 3-ое число: ");
+                    Console.WriteLine("Enter a third number: ");
 
                     int.TryParse(Console.ReadLine(), out int number2);
 
@@ -48,7 +48,7 @@ while (isWork)
 
                     if (number2 > max) max = number2;
 
-                    Console.WriteLine("max - " + max);
+                    Console.WriteLine($"max = {max}");
 
                     break;
 
@@ -56,28 +56,28 @@ while (isWork)
             case 3:
                 {
 
-                    Console.WriteLine("Введите число: ");
+                    Console.WriteLine("Enter a number: ");
 
                     int.TryParse(Console.ReadLine(), out int number);
 
                     if (number % 2 == 0)
                     {
-                        Console.WriteLine("Чётное");
+                        Console.WriteLine($"{number} - even number"); //чётное
                     }
-                    else Console.WriteLine("Нечётное");
+                    else Console.WriteLine($"{number} - odd number"); //нечётное
 
                     break;
 
                 }
             case 4:
                 {
-                    Console.WriteLine("Введите число: ");
+                    Console.WriteLine("Enter a number: ");
 
                     int.TryParse(Console.ReadLine(), out int N);
 
                     for (int i = 1; i <= N; i++)
                     {
-                        if (i % 2 == 0) Console.Write(i + " ");
+                        if (i % 2 == 0) Console.Write($"{i} ");
                     }
                     Console.WriteLine();
                     break;
