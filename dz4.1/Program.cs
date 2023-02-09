@@ -8,7 +8,7 @@ Task_1();
 
 void Task_1()
 {
-    int result = Exponent(ReadInt("Enter Number A:"), ReadInt("Enter Degree B:"));
+    int result = Exponent(ReadInt("Number A:"), ReadInt("Degree B:"));
 
     Console.WriteLine(result);
 
