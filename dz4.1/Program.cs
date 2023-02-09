@@ -32,7 +32,7 @@ int Exponent(int numberA, int numberB)
     int result = 1;
     for (int i = 1; i <= numberB; i++)
     {
-        result = (int)Math.Pow(numberA, numberB);
+        result = result*numberA;
 
     }
     return result;
