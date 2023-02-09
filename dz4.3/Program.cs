@@ -9,7 +9,7 @@ bool isWork = true;
 
 while (isWork)
 {
-Console.WriteLine("Enter Array Input Method, 1: Random, 2: By User, -1: Exit Program: ");
+    Console.WriteLine("Enter Array Input Method, 1: Random, 2: By User, -1: Exit Program: ");
 
     if (int.TryParse(Console.ReadLine(), out int i))
     {
@@ -33,7 +33,7 @@ Console.WriteLine("Enter Array Input Method, 1: Random, 2: By User, -1: Exit Pro
                     Console.WriteLine();
                     break;
                 }
-                      
+
             case -1: isWork = false; break;
         }
     }
@@ -41,28 +41,28 @@ Console.WriteLine("Enter Array Input Method, 1: Random, 2: By User, -1: Exit Pro
 
 void FillArrayByUser(int[] array)
 {
-  for (int i = 0; i < array.Length;i++)
-  {
-    Console.WriteLine($"Enter {i} element of massiv");
-    array[i] = int.Parse(Console.ReadLine());
-  }
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.WriteLine($"Enter {i} element of massiv");
+        array[i] = int.Parse(Console.ReadLine());
+    }
 }
 
 
 void FillArrayRandom(int[] array, int numberA, int numberB)
 {
-  Random random = new Random();
+    Random random = new Random();
 
-  for (int i = 0; i < array.Length; i++)
-  {
-    array[i] = random.Next(numberA, numberB);
-  }
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] = random.Next(numberA, numberB);
+    }
 }
 
 void PrintArray(int[] array)
 {
-  for (int i = 0; i < array.Length; i++) 
-  {
-    Console.Write($"{array[i]} ");
-  }
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
 }
