@@ -48,7 +48,6 @@ void FillArrayByUser(int[] array)
     }
 }
 
-
 void FillArrayRandom(int[] array, int numberA, int numberB)
 {
     Random random = new Random();
