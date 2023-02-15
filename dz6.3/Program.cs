@@ -8,6 +8,8 @@ double[] crossPoint = new double[2];
 
 int ReadInt(string argument)
 {
+    Console.Write(argument);
+
     int number;
 
     while (!int.TryParse(Console.ReadLine(), out number))
