@@ -2,12 +2,9 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
-
-
-
 int ReadInt(string argument)
 {
-    Console.WriteLine($"Input {argument}");
+    Console.Write(argument);
 
     int number;
 
