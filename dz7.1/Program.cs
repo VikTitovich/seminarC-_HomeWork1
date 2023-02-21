@@ -4,11 +4,11 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
-int m = ReadInt("Enter number m: ");
+int numberLines = ReadInt("Enter Number Lines: ");
 
-int n = ReadInt("Enter number n: ");
+int numberRows = ReadInt("Enter Number Rows: ");
 
-double[,] array = new double[m, n];
+double[,] array = new double[numberLines, numberRows];
 
 GetRandomArrayDouble(array);
 
@@ -16,8 +16,7 @@ WriteArray(array);
 
 Console.WriteLine();
 
-
-int ReadInt(string argument)   
+int ReadInt(string argument)
 {
     Console.Write(argument);
 
@@ -30,28 +29,27 @@ int ReadInt(string argument)
     return number;
 }
 
-void GetRandomArrayDouble (double[,] array)
+void GetRandomArrayDouble(double[,] array)
 {
-    for (int i = 0; i < m; i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        for (int j = 0; j < n; j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
-           array[i, j] = new Random().NextDouble() * 20 - 10; 
+            array[i, j] = new Random().NextDouble() * 20 - 10;
         }
     }
 }
 
-void WriteArray (double[,] array)
+void WriteArray(double[,] array)
 {
-for (int i = 0; i < m; i++)
-  {
-      for (int j = 0; j < n; j++)
-      {
-        double alignNumber = Math.Round(array[i, j], 1);
-        Console.Write(alignNumber + " ");
-      }
-      Console.WriteLine();
-  }
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+           Console.Write($"{Math.Round(array[i, j], 1)} ");
+        }
+        Console.WriteLine();
+    }
 }
 
 
