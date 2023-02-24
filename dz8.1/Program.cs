@@ -18,7 +18,7 @@ GetRandomArrayInt(array);
 
 PrintArray(array);
 
-Console.WriteLine($"{Environment.NewLine} New Array:");
+Console.WriteLine($"{Environment.NewLine}New Array:");
 
 OrderArrayLines(array);
 
