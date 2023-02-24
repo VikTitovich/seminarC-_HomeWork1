@@ -8,17 +8,17 @@
 // 9 5 3 2
 // 8 4 4 2
 
-int numberLines = ReadInt("Enter Number Lines: ");
+// int numberLines = ReadInt("Enter Number Lines: ");
 
-int numberRows = ReadInt("Enter Number Rows: ");
+// int numberRows = ReadInt("Enter Number Rows: ");
 
-int[,] array = new int[numberLines, numberRows];
+int[,] array = new int[ReadInt("Enter Number Lines: "), ReadInt("Enter Number Rows: ")];
 
 GetRandomArrayInt(array);
 
 PrintArray(array);
 
-Console.WriteLine("\nNew Array:");
+Console.WriteLine($"{Environment.NewLine} New Array:");
 
 OrderArrayLines(array);
 
@@ -52,9 +52,9 @@ void GetRandomArrayInt(int[,] array)
 
 void PrintArray(int[,] array)
 {
-    for (int i = 0; i < numberLines; i++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-        for (int j = 0; j < numberRows; j++)
+        for (int j = 0; j < array.GetLength(1); j++)
         {
             Console.Write($"{array[i, j]} ");
         }
