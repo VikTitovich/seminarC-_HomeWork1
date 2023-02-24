@@ -7,9 +7,7 @@ int m = ReadInt("Enter Number M: ");
 
 int n = ReadInt("Enter Number N: ");
 
-int f = Ackkerman(m, n);
-
-Console.Write($"{Environment.NewLine}A({m}, {n}) = {f} ");
+Console.Write($"{Environment.NewLine}A({m}, {n}) = {Ackkerman(m, n)} ");
 
 int ReadInt(string argument)
 {
